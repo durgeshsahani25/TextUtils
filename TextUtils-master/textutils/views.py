@@ -1,4 +1,4 @@
-# I have created this file - Harry
+
 from django.http import HttpResponse
 from django.shortcuts import render
 
@@ -18,7 +18,7 @@ def analyze(request):
     extraspaceremover = request.POST.get('extraspaceremover', 'off')
     numberremover = request.POST.get('numberremover','off')
 
-    #Check which checkbox is on
+
     if removepunc == "on":
         punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
         analyzed = ""
